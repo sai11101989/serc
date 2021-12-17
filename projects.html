@@ -4,6 +4,40 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+$("#res").hide();
+$("#stud").hide();
+$("#fund").show();
+
+
+$("#afund").click(function(){
+$("#fund").show();
+$("#res").hide();
+$("#stud").hide();
+	      });
+		  
+		  
+$("#ares").click(function(){
+$("#res").show();
+$("#fund").hide();
+$("#stud").hide();
+	      });
+		  
+$("#astud").click(function(){
+$("#stud").show();
+$("#fund").hide();
+$("#res").hide();
+	      });		  
+		  
+		  
+});
+</script>
+
 <style>
 body {font-family: Quicksand; font-size: 14px; color:#333}
         table
@@ -97,8 +131,8 @@ a:active {
   border-radius: 8px;
 }
 
-.button2 {
-  background-color: #3B5998; 
+.sourcecode {
+  background-color: #BBBA00; 
   border: none;
   color: white;
   padding: 5px;
@@ -150,6 +184,50 @@ a:active {
   border-radius: 8px;
 }
 
+
+
+.student {
+  background-color: #B30A89; 
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+   cursor: pointer;
+  border-radius: 8px;
+}
+
+.thesis {
+  background-color: #8200C1; 
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+   cursor: pointer;
+  border-radius: 8px;
+}
+
+.funded {
+  background-color: #105262; 
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+   cursor: pointer;
+  border-radius: 8px;
+}
+
 </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -193,22 +271,23 @@ a:active {
 </td>
 </tr>
 <tr>
-<td align="center" colspan="3" style="vertical-align:center"> <h2> <a id="anchorunderline" href="C:\serc\index.html">HOME</a> </h2></td>
-<td align="center" colspan="3" style="vertical-align:center"> <h2> <a id="anchorunderline" href="C:\serc\people.html">PEOPLE</a></h2> </td>
-<td align="center" colspan="3" style="vertical-align:center"> <h2> <a id="anchorunderline" href="C:\serc\publication.html">PUBLICATION</a> </h2> </td>
-<td align="center" colspan="3" style="vertical-align:center"> <h2> <a id="anchorunderline" href="C:\serc\projects.html">PROJECTS</a> </h2> </td>
-<td align="center" colspan="3" style="vertical-align:center"> <h2> <a id="anchorunderline" href="C:\serc\contact.html">CONTACT</a> </h2> </td>
+<td align="center" colspan="3" style="vertical-align:center"> <h2> <a id="anchorunderline" href="https://serc.iiit.ac.in/test/index.html">HOME</a> </h2></td>
+<td align="center" colspan="3" style="vertical-align:center"> <h2> <a id="anchorunderline" href="https://serc.iiit.ac.in/test/people.html">PEOPLE</a></h2> </td>
+<td align="center" colspan="3" style="vertical-align:center"> <h2> <a id="anchorunderline" href="https://serc.iiit.ac.in/test/publication.html">PUBLICATION</a> </h2> </td>
+<td align="center" colspan="3" style="vertical-align:center"> <h2> <a id="anchorunderline" href="https://serc.iiit.ac.in/test/projects.html">PROJECTS</a> </h2> </td>
+<td align="center" colspan="3" style="vertical-align:center"> <h2> <a id="anchorunderline" href="https://serc.iiit.ac.in/test/contact.html">CONTACT</a> </h2> </td>
 </tr>
 <tr>
 <td colspan="16" align="center">
-<h4>Following are the list of Projects and their respective outcomes</h4>
+<h4>Click below for the list of Projects and their respective outcomes.</h4>
+<button class="funded" id="afund"><b> FUNDED PROJECT </b></button> &nbsp;&nbsp; <button class="student" id="astud"><b> STUDENT PROJECT </b></button> &nbsp;&nbsp; <button class="thesis" id="ares"><b> RESEARCH PROJECT </b></button>
 </td>
 </tr>
 <tr>
 <td colspan="16">
 <hr>
-<ul>
-<li> <b>Development of Security Search Engine <button class="button3"><b>ONGOING</b></button> <button class="button5"><b>FUNDED PROJECT</b></button></b> - The project involves development of a information security search engine. Funded by Interdisciplinary Cyber Physical Systems Programme, DST, Govt of India. <button class="button" onclick="window.open('https://serc.iiit.ac.in/Bhompoo/infosec.html', '_blank');"><b>DEMO</b></button><button class="button2" onclick="window.open('https://github.com/SIREN-DST/', '_blank');"><b>SOURCECODE</b></button>
+<ul id="fund">
+<li> <b>Development of Security Search Engine <button class="button3"><b>ONGOING</b></button> </b> - The project involves development of a information security search engine. Funded by Interdisciplinary Cyber Physical Systems Programme, DST, Govt of India. <button class="button" onclick="window.open('https://serc.iiit.ac.in/Bhompoo/infosec.html', '_blank');"><b>DEMO</b></button><button class="sourcecode" onclick="window.open('https://github.com/SIREN-DST/', '_blank');"><b>SOURCECODE</b></button>
 <br>
 Following are some of the objectives of this project proposal:
 <ol>
@@ -219,29 +298,14 @@ Following are some of the objectives of this project proposal:
 <li>Contain feature for RSS Feed and Alerts based on user criteria (keyword, frequency, etc). This would help MSME and other small scale users of IT for better preparedness from security vulnerabilities.	 </li>
 </ol>
 </li>
-<br>
-<li> <b>Visual acuity testing using VR</b> <button class="button3"><b>ONGOING</b></button> <button class="button5"><b>STUDENT PROJECT</b></button> - The VREYE project aims to widen the scope of VR software systems in the medical domain and loops in various benefits of the technology in order to solve the problems that persist in the scope of testing and detection. VR is used for Visual acuity testing of myopia and astigmatic eyes and can be used in providing a piece of tentative information about the refractive errors in the human eye using HMD devices. <button class="button" onclick="window.open('https://www.youtube.com/watch?v=NlqTsSvGoLY', '_blank');"><b>DEMO</b></button><button class="button2" onclick="window.open('https://www.youtube.com/watch?v=NlqTsSvGoLY', '_blank');"><b>SOURCECODE</b></button>
-<br>
-This project was partially funded by Google (GCP credits). The goals of the project is to provide a visual acuity testing solution:
-<ol>
-<li>To the underprivileged and post covid-19 pandemic to serve as a remote, user-friendly, safe testing kit for personal usage where the patients are not required to flock hospitals for minor testing and diagnosis purposes for refractive errors in eye.</li>
-<li>Also, this project may be expanded in future in areas like color-blindness and other eye-related ailments.</li>
-<li>This project has been developed specifically using Unity in order to make it compatible with various VR specific platforms.</li>
- <li>In this project we aimed to digitize and automate the various eye-testing methods like Snellen Test (for myopia detection), Fan Test (for astigmatism detection) and with sufficient user data predict to the closest value possible what could be the refractive indexes of patients using the system.</li> 
-</li>
-</ol>
-</ul>
-<ul>
-<li> <b> Smart Contracts for Opensource Software License Management </b> <button class="button3"><b>ONGOING</b></button> <button class="button5"><b>FUNDED PROJECT</b></button> - Study the usage of smart contracts for open source software license management and create a prototype implementation using RIPPLE or Ether. This project is funded by IIIT via RIPPLE. <button class="button" onclick="window.open('https://www.youtube.com/watch?v=NlqTsSvGoLY', '_blank');"><b>DEMO</b></button><button class="button2" onclick="window.open('https://www.youtube.com/watch?v=NlqTsSvGoLY', '_blank');"><b>SOURCECODE</b></button>
+<li> <b> Smart Contracts for Opensource Software License Management </b> <button class="button3"><b>ONGOING</b></button> - Study the usage of smart contracts for open source software license management and create a prototype implementation using RIPPLE or Ether. This project is funded by IIIT via RIPPLE. <button class="button" onclick="window.open('https://www.youtube.com/watch?v=NlqTsSvGoLY', '_blank');"><b>DEMO</b></button><button class="sourcecode" onclick="window.open('https://www.youtube.com/watch?v=NlqTsSvGoLY', '_blank');"><b>SOURCECODE</b></button>
 <ol>
 <li>Study smart contract development environment and work on digital asset management</li>
 <li>List the contract terms of open source software </li>
 <li>Prototype smart contract development for open source licenses</li>
 </ol>
 </li>
-</ul>
-<ul>
-<li> <b>Design Innovation Centre </b> <button class="button3"><b>ONGOING</b></button> <button class="button5"><b>FUNDED PROJECT</b></button>- Ministry of Human Resource Development has proposed a National Initiative for Design Innovation in the Twelfth Plan. Under this initiative, 20 new Design Innovation Centers (DIC), one Open Design school (ODS) and a National Design Innovation Network (NDIN), linking together all these schools and other allied bodies such as leading institutions of Industry and academics, NGOs and government were set up. The Department of Design at IIT Hyderabad is setting itself up as one of the Design Innovation Centers. Since a ‘HUB & Spoke’ model is to be adopted, The Department of Design, IIT Hyderabad would be a Hub and IIIT Hyderabad would be the spoke. <button class="button" onclick="window.open('https://www.youtube.com/watch?v=NlqTsSvGoLY', '_blank');"><b>DEMO</b></button><button class="button2" onclick="window.open('https://www.youtube.com/watch?v=NlqTsSvGoLY', '_blank');"><b>SOURCECODE</b></button>
+<li> <b>Design Innovation Centre </b> <button class="button3"><b>ONGOING</b></button> - Ministry of Human Resource Development has proposed a National Initiative for Design Innovation in the Twelfth Plan. Under this initiative, 20 new Design Innovation Centers (DIC), one Open Design school (ODS) and a National Design Innovation Network (NDIN), linking together all these schools and other allied bodies such as leading institutions of Industry and academics, NGOs and government were set up. The Department of Design at IIT Hyderabad is setting itself up as one of the Design Innovation Centers. Since a ‘HUB & Spoke’ model is to be adopted, The Department of Design, IIT Hyderabad would be a Hub and IIIT Hyderabad would be the spoke. <button class="button" onclick="window.open('https://www.youtube.com/watch?v=NlqTsSvGoLY', '_blank');"><b>DEMO</b></button><button class="sourcecode" onclick="window.open('https://www.youtube.com/watch?v=NlqTsSvGoLY', '_blank');"><b>SOURCECODE</b></button>
 <ol>
 <li>Various design related initiative including design prototypes and workshops.</li>
 <li>Designing economically viable Headmounted VR device</li>
@@ -250,54 +314,158 @@ This project was partially funded by Google (GCP credits). The goals of the proj
 <li>Gamification of Software development tasks</li>
 </ol>
 </li>
+<li>
+<b>Virtual Labs - Phase II & III</b>  <button class="button4"><b>COMPLETED</b></button> - 2016-2020. Sponsor: MHRD, Govt. of India. Consortium partners: IITs at Bombay Delhi, Guwahati Kanpur, Kharagpur, Roorkee, Amrita University, COE Pune, Dayalbagh University, NIT Surathkal. Total Budget: Rs. 100 Crores for 5 years. <button class="button" onclick="window.open('https://www.vlab.co.in/', '_blank');"><b>DEMO</b></button><button class="sourcecode" onclick="window.open('https://github.com/virtual-labs, '_blank');"><b>SOURCECODE</b></button>
+</li>
+<li>
+<b>Virtual Labs - Phase I</b>  <button class="button4"><b>COMPLETED</b></button> - 2010-2014. Sponsor: Virtual Labs consortium under the Virtual Labs main phase project. Budget: 3.3 Cr. <button class="button" onclick="window.open('https://www.vlab.co.in/', '_blank');"><b>DEMO</b></button><button class="sourcecode" onclick="window.open('https://github.com/virtual-labs, '_blank');"><b>SOURCECODE</b></button>
+</li>
+<li> <b>Big Data Analytics on the cloud </b> <button class="button4"><b>COMPLETED</b></button> - The Objectives of this project is to Study and build various available Big Data technology stacks like Hadoop Big data platform, Map Reduce programming models, and search software such as Lucene and Solr, Provide Proof of concept on a. Real- time search on CA product log files and b. Analytics on CA Risk Minder's Device DNA data. Project was part of the CA-IIIT Innovation center.
+</li>
+<li> <b>Standardization of Mobile Interfaces </b> <button class="button4"><b>COMPLETED</b></button> - To define the standards for mobile interfaces for the Enterprise CA Product Suite. User and Task analysis is an important component of assessing any specific products usability. If the user has to undergo a rigorous learning process to use a specific application or a product, the chances of the product succeeding in the market place will decrease. From an end user perspective, we can intuitively state that every application/product's user interface will involve different set of behaviours and therefore require some amount of learning. The projects objective was to reduce the amount of learning by standardizing the interfaces. Project was part of the CA-IIIT Innovation center.
+</li>
+<li> <b>Distributed Model Checking</b> <button class="button4"><b>COMPLETED</b></button> - (Co-PI) 2014-2016. Sponsor: Hitachi India Limited. Budget: 15 Lakhs.
+</li>
+<li > <b>ISEA (PI)</b> <button class="button4"><b>COMPLETED</b></button> - Ministry of Information Technology, Government of India. Information Security Education and Awareness (ISEA) 2006-2009. Principal Investigator at Participating Institution IIITM-K. Rs. 3L per annum.
+</li>
 </ul>
 
-<ul>
+
+<ul id="stud">
 <li>
-<b>Gamily - Gamification Platform For All</b>  <button class="button4"><b>COMPLETED</b></button>  <button class="button5"><b>STUDENT PROJECT</b></button>- Software engineering activities like code reviews, change management, knowledge management, issue tracking, etc. tend to be heavily process oriented. Gamification of such activities by composing the core activities
+<b>Gamily - Gamification Platform For All</b>  <button class="button4"><b>COMPLETED</b></button>- Software engineering activities like code reviews, change management, knowledge management, issue tracking, etc. tend to be heavily process oriented. Gamification of such activities by composing the core activities
 with game design elements like badges and points can increase developers' interest in performing such activities. While there are various frameworks/applications that assist in gamification, extending the frameworks to add any/all desired game de sign elements have not been adequately addressed. As part of our research, we designed and developed an extensible architectural framework for gamification of software engineering activities where in the game design elements are modeled as services. We create an example instance of our framework by building a prototype for code review activity and note the challenges of
-designing such an extensible architectural framework. The example instance uses python's Flask micro framework and has five game design elements implemented as services, and exposed using restful APIs <button class="button" onclick="window.open('https://www.youtube.com/watch?v=IjgOBEQMFn8', '_blank');"><b>DEMO</b></button><button class="button2" onclick="window.open('https://github.com/skbly7/gamifiedSD, '_blank');"><b>SOURCECODE</b></button>
+designing such an extensible architectural framework. The example instance uses python's Flask micro framework and has five game design elements implemented as services, and exposed using restful APIs <button class="button" onclick="window.open('https://www.youtube.com/watch?v=IjgOBEQMFn8', '_blank');"><b>DEMO</b></button><button class="sourcecode" onclick="window.open('https://github.com/skbly7/gamifiedSD, '_blank');"><b>SOURCECODE</b></button>
+</li>
+<br>
+<br>
+<li> <b>Visual acuity testing using VR</b> <button class="button3"><b>ONGOING</b></button> - The VREYE project aims to widen the scope of VR software systems in the medical domain and loops in various benefits of the technology in order to solve the problems that persist in the scope of testing and detection. VR is used for Visual acuity testing of myopia and astigmatic eyes and can be used in providing a piece of tentative information about the refractive errors in the human eye using HMD devices. <button class="button" onclick="window.open('https://www.youtube.com/watch?v=NlqTsSvGoLY', '_blank');"><b>DEMO</b></button><button class="sourcecode" onclick="window.open('https://www.youtube.com/watch?v=NlqTsSvGoLY', '_blank');"><b>SOURCECODE</b></button>
+<br>
+This project was partially funded by Google (GCP credits). The goals of the project is to provide a visual acuity testing solution:
+<ol>
+<li>To the underprivileged and post covid-19 pandemic to serve as a remote, user-friendly, safe testing kit for personal usage where the patients are not required to flock hospitals for minor testing and diagnosis purposes for refractive errors in eye.</li>
+<li>Also, this project may be expanded in future in areas like color-blindness and other eye-related ailments.</li>
+<li>This project has been developed specifically using Unity in order to make it compatible with various VR specific platforms.</li>
+ <li>In this project we aimed to digitize and automate the various eye-testing methods like Snellen Test (for myopia detection), Fan Test (for astigmatism detection) and with sufficient user data predict to the closest value possible what could be the refractive indexes of patients using the system.</li> 
+</ol>
 </li>
 </ul>
 
-<ul>
+<ul id="res">
+
 <li>
-<b>UMETRIX - Usability Evaluation for Mobile Apps</b>  <button class="button4"><b>COMPLETED</b></button>  <button class="button5"><b>STUDENT PROJECT</b></button>- UMETRIX to
-identify functional usability issues specific to mobile applications. This framework uses usability guidelines associated with usability code patterns in mobile applications to improve usability. As proof of concept, we have built an end-to-end system using the framework to validate and verify usability issues in Android mobile applications and generate recommendations to enhance functional aspects of Usability <button class="button" onclick="window.open('https://www.youtube.com/watch?v=eeo0e1ajNnM', '_blank');"><b>DEMO</b></button><button class="button2" onclick="window.open('https://github.com/neerajmathur/UMETRIX, '_blank');"><b>SOURCECODE</b></button>
+<b> Towards developing a Customized Head-Mounted Device for HealthCare [Pawan Kumar] </b><button class="button3"><b>ONGOING</b> </button><br>
 </li>
-</ul>
-
-
-<ul>
 <li>
-<b>Virtual Labs - Phase II & III</b>  <button class="button4"><b>COMPLETED</b> <button class="button5"><b>FUNDED PROJECT</b></button></button> - 2016-2020. Sponsor: MHRD, Govt. of India. Consortium partners: IITs at Bombay Delhi, Guwahati Kanpur, Kharagpur, Roorkee, Amrita University, COE Pune, Dayalbagh University, NIT Surathkal. Total Budget: Rs. 100 Crores for 5 years. <button class="button" onclick="window.open('https://www.vlab.co.in/', '_blank');"><b>DEMO</b></button><button class="button2" onclick="window.open('https://github.com/virtual-labs, '_blank');"><b>SOURCECODE</b></button>
+<b> Capability composition for robotics and cyber-physical systems engineering [Amar Banerjee] </b><button class="button3"><b>ONGOING</b> </button><br>
 </li>
-</ul>
-
-<ul>
 <li>
-<b>Virtual Labs - Phase I</b>  <button class="button4"><b>COMPLETED</b></button> <button class="button5"><b>FUNDED PROJECT</b></button> - 2010-2014. Sponsor: Virtual Labs consortium under the Virtual Labs main phase project. Budget: 3.3 Cr. <button class="button" onclick="window.open('https://www.vlab.co.in/', '_blank');"><b>DEMO</b></button><button class="button2" onclick="window.open('https://github.com/virtual-labs, '_blank');"><b>SOURCECODE</b></button>
+<b> Model Based design and implementation of Virtual Lab Experiments [Mrityunjay Kumar] </b><button class="button3"><b>ONGOING</b> </button><br>
 </li>
-</ul>
-
-<ul>
-<li> <b>Big Data Analytics on the cloud </b> <button class="button4"><b>COMPLETED</b></button> <button class="button5"><b>FUNDED PROJECT</b></button> - The Objectives of this project is to Study and build various available Big Data technology stacks like Hadoop Big data platform, Map Reduce programming models, and search software such as Lucene and Solr, Provide Proof of concept on a. Real- time search on CA product log files and b. Analytics on CA Risk Minder's Device DNA data. Project was part of the CA-IIIT Innovation center.
-</li>
-</ul>
-
-<ul>
-<li> <b>Standardization of Mobile Interfaces </b> <button class="button4"><b>COMPLETED</b></button> <button class="button5"><b>FUNDED PROJECT</b></button> - To define the standards for mobile interfaces for the Enterprise CA Product Suite. User and Task analysis is an important component of assessing any specific products usability. If the user has to undergo a rigorous learning process to use a specific application or a product, the chances of the product succeeding in the market place will decrease. From an end user perspective, we can intuitively state that every application/product's user interface will involve different set of behaviours and therefore require some amount of learning. The projects objective was to reduce the amount of learning by standardizing the interfaces. Project was part of the CA-IIIT Innovation center.
-</li>
-</ul>
-
-
-<ul>
-<li> <b>Distributed Model Checking</b> <button class="button4"><b>COMPLETED</b></button> <button class="button5"><b>FUNDED PROJECT</b></button> - (Co-PI) 2014-2016. Sponsor: Hitachi India Limited. Budget: 15 Lakhs.
-</li>
-</ul>
-<ul>
 <li>
-<b>ISEA (PI)</b> <button class="button4"><b>COMPLETED</b></button> <button class="button5"><b>FUNDED PROJECT</b></button> - Ministry of Information Technology, Government of India. Information Security Education and Awareness (ISEA) 2006-2009. Principal Investigator at Participating Institution IIITM-K. Rs. 3L per annum.
+<b> Designing Limitless Navigation in Virtual Environments [Raghav Mittal] </b><button class="button3"><b>ONGOING</b> </button><br>
+</li>
+<li>
+<b> Requirement Engineering for Virtual Reality Products [Sai Anirudh Karre] </b><button class="button3"><b>ONGOING</b> </button><br>
+</li>
+<li>
+<b> Deep Learning based approach on Ontology Alignment  [Vivek Iyer] </b><button class="button3"><b>ONGOING</b> </button><br>
+</li>
+<li>
+<b> Pedagogy-based Analytics for virtual labs [Krutham Hathi] </b><button class="button3"><b>ONGOING</b> </button><br>
+</li>
+<li>
+<b> Ontology services for web accessibility [Soumya Maddala] </b><button class="button3"><b>ONGOING</b> </button><br>
+</li>
+<br>
+<li>
+<b>UMETRIX - Usability Evaluation for Mobile Apps [Neeraj Mathur] </b>  <button class="button4"><b>COMPLETED</b></button> <button class="button" onclick="window.open('https://www.youtube.com/watch?v=eeo0e1ajNnM', '_blank');"><b>DEMO</b></button><button class="sourcecode" onclick="window.open('https://github.com/neerajmathur/UMETRIX', '_blank');"><b>SOURCECODE</b></button> <button class="thesis" onclick="window.open('https://web2py.iiit.ac.in/research_centres/publications/view_publication/mastersthesis/688', '_blank');"><b>THESIS</b></button> <br> UMETRIX to identify functional usability issues specific to mobile applications. This framework uses usability guidelines associated with usability code patterns in mobile applications to improve usability. As proof of concept, we have built an end-to-end system using the framework to validate and verify usability issues in Android mobile applications and generate recommendations to enhance functional aspects of Usability. 
+</li>
+<br>
+<li>
+<b>Exploring Crowdsourcing to PersonalizeWeb Experiences [Deepti Aggarwal] </b> <button class="button4"><b>COMPLETED</b></button><button class="sourcecode" onclick="window.open('https://github.com/arvindkhadri/alipi', '_blank');"><b>SOURCECODE</b></button> <button class="thesis" onclick="window.open('https://web2py.iiit.ac.in/research_centres/publications/view_publication/mastersthesis/232', '_blank');"><b>THESIS</b></button><br>It is an attempt to utilize collective human intelligence to support extraction and understanding of the content over the web, which will in turn help to create personalized web experiences. In particular, we propose crowdsourcing based systems for the following tasks: 1) extracting user preferences, 2) extracting named entities, and 3) renarration of the web documents. First, we propose a friend sourcing based approach called as Crowd Consensus where we extract user preferences from the collected opinions from her friends and tested it with an online game called as Power of Friends. 
+</li>
+<br>
+<li>
+<b>Scalable Distributed Safety Verification using Actor Architecture [Adhish Singla] </b> <button class="button4"><b>COMPLETED</b></button><button class="thesis" onclick="window.open('https://web2py.iiit.ac.in/research_centres/publications/view_publication/mastersthesis/810', '_blank');"><b>THESIS</b></button> <br> Distributed model checking is an important and promising approach to tackle the problem of scale. Our first implementation is based on vertex centric programming model. It is uses the concept of bulk synchronous parallel computing to synchronize. The second implementation uses Actor Model. We propose asynchronous algorithms for the verification and a simple reduction strategy in this implementation. The main advantage of Actor model is that it comes with a transparent way to scale from a single node to multiple nodes, without having to change any of the implementation. 
+</li>
+<br>
+<li>
+<b>Automata based abstraction of interval assumptions and bounded input linear systems for verification and controller synthesis [Santosh Arvind Adimoolam] </b> <button class="button4"><b>COMPLETED</b></button><button class="thesis" onclick="window.open('https://web2py.iiit.ac.in/research_centres/publications/view_publication/mastersthesis/300', '_blank');"><b>THESIS</b></button> <br> We extend the paradigm of automata based abstraction in the following two directions: • A subset of timed computational tree logic (TCTL), called interval assumptions, is abstracted as a type of timed automata called continuous pure signal input output automata. This abstraction is done for verifying guarantees (or requirements) specified in TCTL for timed automata under environments specified as interval assumptions. The approach is useful for modular verification of manufacturing systems, standard small scale examples of which include the Turntable and Production Cell. This is the first attempt to use a subset of TCTL as assumptions in modular verification. • Near-complete abstraction of bounded input linear control systems as finite state metric transition systems.
+</li>
+<br>
+<li>
+<b>Evolution of Mental Models of Interactive Machines: A Formal Approach [Himanshu Zade] </b> <button class="button4"><b>COMPLETED</b></button><button class="thesis" onclick="window.open('https://web2py.iiit.ac.in/research_centres/publications/view_publication/mastersthesis/336', '_blank');"><b>THESIS</b></button> <br>  We propose an algorithm to compute edit distance between two models and employ the heuristic procedure on experimental data for computing edit distance between target and user models. The data is organised into two experiments depending on the device the user interacted with: (a) a simple string generator device and (b) a close to real-world vehicle transmission model. The results indicate that the edit distance modulo bisimulation measure of a user model and user learning as measured extensionally through participant responses to given tasks have a strong downhill linear relationship (correlation co- efficient = -0.76). This validates the proposed metric as edit distance converges with progressive user learning, increases for erroneous learning, and remains unchanged indicating no learning. Thus, the work demonstrates that user learning can be witnessed, captured, and measured formally, allowing for a better understanding of how users learn to use an unfamiliar device. The proposed representational technique provides an intensional description of the process involved in learning a new device. The experimental studies indicated that our proposed edit distance metric allows us to examine several questions of interest to the HCI community about the learning process. 
+</li>
+<br>
+<li>
+<b>Specification and Modelling of Workflow Management Systems with State Based Access Control [Ankur Goel] </b> <button class="button4"><b>COMPLETED</b></button><button class="thesis" onclick="window.open('https://web2py.iiit.ac.in/research_centres/publications/view_publication/mastersthesis/412', '_blank');"><b>THESIS</b></button> <br>  A Workflow is a collection of coordinated tasks designed to carry out a well-defined process. Work flows are ubiquitous in process management. The question we address in this thesis is how to specify and design verifiable work flows for such processes. To specify work flows, we borrow a simple algebraic notation from computer science. We illustrate the use of two algebraic specification languages: Pi-calculus and Calculus of Communicating Systems (CCS), through a series of typical work flow examples. We describe a modular, fine-grained, state-based model that can form the basis for specifying access control in e-governance service delivery workflows. The model consists of three layers: a data store, a workflow layer, and an access control layer. The data store consists of fields and forms. The work flow is specified as concurrent processes each representing a user. The access control layer specifies, for each user (process), the user’s view of the data store as determined by that user’s state in the work flow. 
+</li>
+<br>
+<li>
+<b>Mitigating Web-borne Security Threats by Enhancing Browser Security Policies [Krishna Chaitanya] </b> <button class="button4"><b>COMPLETED</b></button> <button class="button" onclick="window.open('http://iiithyd-websec.github.io/', '_blank');"><b>DEMO</b></button> <button class="sourcecode" onclick="window.open('http://iiithyd-websec.github.io/corp/', '_blank');"><b>SOURCECODE</b></button> <button class="thesis" onclick="window.open('https://web2py.iiit.ac.in/research_centres/publications/view_publication/mastersthesis/407', '_blank');"><b>THESIS</b></button> <br> The outcome of the work is two fold: Firstly, it presents a security abstraction layer (as an API library) called “SafeMash”, which helps developers build safe mashups over the current low-level security APIs in HTML5. Secondly and more importantly, it proposes a novel declarative browser security policy called CORP (Cross Origin Request Policy) to mitigate a set of attacks which we refer to as “Web Infiltration attacks”. CORP enables a server to control which site can access which resource on a cross-origin server, and through which browser event. To evaluate the effectiveness of SafeMash and CORP, several experiments were conducted. The usage of SafeMash was empirically demonstrated by first building an interactive mashup using open APIs from ProgrammableWeb (without using state-of-the-art security echanisms) and then rebuilding it using SafeMash without losing functionality. 
+</li>
+<br>
+<li>
+<b> Defect Dependency based Heuristic Approaches to Improve Software Quality in Large Scale Integrated Software Products [Sai Anirudh Karre] </b> <button class="button4"><b>COMPLETED</b></button><button class="thesis" onclick="window.open('https://web2py.iiit.ac.in/research_centres/publications/view_publication/mastersthesis/466', '_blank');"><b>THESIS</b></button> <br>
+we examined Defect Dependency calculation using the concept of Generalized Dependency Degree method which is measure a of studying the dependency of an element over another. This method was primarily inspired by dependency degree approach from Rough Set Theory. We formulated this method into an approach by representing all recorded defects per sub product in a large scale integrated software product as onevset. We calculated Generalized Dependency Degree between defect sets of each sub-product so as to estimate the defect dependency over another. We implemented this approach on a real-time industrial defect dataset of a large scale integrated Human vi vii Resource Management product. Also captured significant results across various version releases. This is a simple and a generic approach to implement on a large software products.
+</li>
+<br>
+<li>
+<b> Automated Credibility Assessment of Web Page [Shriyansh Agrawal] </b> <button class="button4"><b>COMPLETED</b></button> <button class="sourcecode" onclick="window.open('https://github.com/SIREN-SERC/WEBCred', '_blank');"><b>SOURCECODE</b></button>
+<button class="thesis" onclick="window.open('https://web2py.iiit.ac.in/research_centres/publications/view_publication/mastersthesis/776', '_blank');"><b>THESIS</b></button> <br>
+In this work, we propose an automated approach for credibility assessment of web page, where genre is also identified within to give human experts alike assessment results. We design a framework (called W EBCred) based on our proposed approach which accommodates various individual structures like – crawling, genre classification, normalization, scoring, etc. and keep them independent from each other to facilitate further extensib lilty. The proposed framework allows the addition of new genres, features and alter weightages providing flexibility for user intervention. To validate our proposed approach, we developed an Open-Source tool, which is capable of genre identification along with extraction and normalization of selected feature instance values to calculate a credible score (called GCS) of every web page. Few of these features were new and their extraction methodologies are defined by ourselves, as they are not explicit. Our tool is fully automated, such that it assess the Genre Credibility Score (GCS) of a given web page without any human aid.
+</li>
+<br>
+<li>
+<b> Architecting an extensible framework to support Gamification of Software Engineering Activities [Sai Krishna Sripada]</b> <button class="button4"><b>COMPLETED</b></button> <button class="sourcecode" onclick="window.open('https://github.com/anhsirksai/GamifiedSD', '_blank');"><b>SOURCECODE</b></button>
+<button class="thesis" onclick="window.open('https://web2py.iiit.ac.in/research_centres/publications/view_publication/mastersthesis/449', '_blank');"><b>THESIS</b></button> <br>
+Gamification can increase developers' interest in performing such activities. While there are various frameworks/applications that assist in gamification, extending and configuring the frameworks to add any/all the desired game design elements has not been adequately addressed. Implying configurable rules within a rule engine instead of implementing business logic to award game design elements is still unaddressed. Addressing the aforementioned issues in this thesis, an extensible architectural framework for gamification of software engineering activities is designed and developed. The framework supports building new game design elements and gamifying software engineering processes. Game design elements are implemented as rest-full services. Gamifying an application involves adding features without modifying the original look and feel of the application. The framework consists of three major components : 1) A base framework consisting of software packages required to support an SE activity. 2) Game design elements which are implemented as micro services using python's Flask micro framework and 3) Basic front end components namely table, matrix and list which support the UI of game design elements. These components are developed as Ember.js UI components.
+</li>
+
+<br>
+<li>
+<b> Software Engineering practices for Building MLware Applications - Creditrisk Evaluation Case Study [Siddarth Bhatore] </b>
+<button class="button4"><b>COMPLETED</b></button> <button class="sourcecode" onclick="window.open('https://github.com/sbhatore95/credit-risk-eval', '_blank');"><b>SOURCECODE</b></button><button class="button" onclick="window.open('https://credit-risk-eval.herokuapp.com/', '_blank');"><b>DEMO</b></button><button class="thesis" onclick="window.open('https://web2py.iiit.ac.in/research_centres/publications/view_publication/mastersthesis/895', '_blank');"><b>THESIS</b></button> <br>
+We developed maintainable, scalable, and explainable MLware applications usingsoftware engineering practices is described and a proof of concept implementation for the specific caseof credit risk evaluation is detailed. Microservices based architecture is used to develop the applicationwith the use of Strategy design pattern.This helps with scalability and maintainability of theapplications. A simple approach to understand the decision made by the machine learning model isalso provided. We detail the set of practices using a credit risk evaluation MLware application thathelps a loan granting officer in deciding whether to grant the loan or not. The implementation is doneusing Django framework and is deployed on Heroku server
+</li>
+
+<br>
+<li>
+<b>Application, Modelling and Implementation of CORP (Cross Origin Request Policy) [Akash Agrawall]</b>
+<button class="button4"><b>COMPLETED</b></button> <button class="sourcecode" onclick="window.open('https://github.com/iiithyd-websec/corp-extn', '_blank');"><b>SOURCECODE</b></button><button class="button" onclick="window.open('http://iiithyd-websec.github.io/corp/', '_blank');"><b>DEMO</b></button><button class="thesis" onclick="window.open('https://web2py.iiit.ac.in/research_centres/publications/view_publication/mastersthesis/578', '_blank');"><b>THESIS</b></button> <br>
+This work undertakes a detailed analysis of CORP, a browser security policy which can be used to mitigate cross-origin request attacks. CORP enables a server to control cross-origin interactions initiated by a browser. The browser intercepts the cross-origin requests and blocks the unwanted requests by the server. Further, we explain the outcome of this work in three folds: Firstly, it demonstrates a compelling application of CORP in mitigating the browser-based DDoS attack, which has severely affected several websites in the past. Secondly, to gain a better understanding of CORP, we built a formal model of cross-origin request attacks and mitigated it using CORP. CORP has a client side dependency where users will have to use a CORP compliant browser to mitigate cross-origin attacks. Considering this, the concluding task was - implementation of CORP in Chromium source code. To evaluate the effectiveness of CORP, we conducted several experiments on various cross-origin attacks.
+</li>
+<br>
+<li>
+<b> Software Plug and Play [Anand Kumar] </b><button class="button4"><b>COMPLETED</b></button><button class="thesis" onclick="window.open('https://web2py.iiit.ac.in/research_centres/publications/view_publication/phdthesis/70', '_blank');"><b>THESIS</b></button> <br>
+This work considers Software Plug and Play as a potentially useful architectural abstraction that can solve many software architecture problems faced by vertical markets in the industry. While Plug and Play as a technology has been utilized to address many extensibility concerns in Information Technology (IT) infrastructure, there is no systematic support for similar extensibility notion at the software architecture level. To address these concerns, this thesis proposes the creation of frameworks and component models to support Plug and Play. Accordingly, this thesis considers Plug and Play as a user-defined framework, supported by a run-time component library that is embedded in the component schema, in order to support functional and structural extensibility of a running software system.
+</li>
+<br>
+<li>
+<b>Case Study Oriented Learning Environment for Software Engineering [Kriti Garg]</b><button class="button4"><b>COMPLETED</b></button><button class="thesis" onclick="window.open('https://web2py.iiit.ac.in/research_centres/publications/view_publication/phdthesis/81', '_blank');"><b>THESIS</b></button> <br>
+The proposed Case Oriented learning environment for Software Engineering Education (COSEEd) uses a case based instructional approach, with structured problem solving at its core. Essentially, challenges in well-designed case studies engage students in authentic SE activities for solving authentic, contextualized problems. Students achieve the learning goals through the process of understanding and solving a given SE case study. To improve the specificity, accuracy and granularity of analysis, we developed a formal validation approach named as Requirement Satisfaction Index (RSI). RSI detects and measures the presence of requisite qualities, including learning at various cognitive levels. RSI is a novel way of thinking towards design and evaluation of learning environments in terms of needed capabilities or requirements of a learning environment. Results exhibit that COSEEd, the case study oriented learning environment is highly suitable for the Indian context. 
+</li>
+<br>
+<li>
+<b>Semantic Style Sheets for Renarrting the Web [Sai Gollapudi] </b><button class="button4"><b>COMPLETED</b></button>
+<button class="sourcecode" onclick="window.open('https://github.com/vlead/SemanticTransformation', '_blank');"><b>SOURCECODE</b></button><button class="thesis" onclick="window.open('https://web2py.iiit.ac.in/research_centres/publications/view_publication/phdthesis/136', '_blank');"><b>THESIS</b></button> <br>
+In this research, we address the web content accessibility problem, especially as it relates to the able-bodied but non main-stream users. We use the existing social technique of renarration and apply it to web content. From a computer science point of view, we treat this renarration as a semantic transformation problem. Keeping the potentially non-technical end-user in mind, we approach the web page transformation problem by way of style sheets. That is, we see semantic transformation being aided by a Semantic Style Sheet. The notion of SSS is realized as a Domain Specific Language. The grammar for this SSS is essentially derived as an extension of the abstractions we unpack from CSS. We further contribute to the case of semantic transformation by proposing an ontology based conceptual model for an arbitrary web page. And we show a way to juxtapose multiple semantic structures on a given, already published web page. Finally, we present this SSS based work as a framework consisting of a SSS-Maker, SSS-Renderer and a SSS-Database. This is how we renarrate the web for improving accessibility.
+</li>
+<br>
+<li>
+<b> A Software Engineering Approach for Design of Education Technologies [Sridhar Chimalakonda]</b><button class="button4"><b>COMPLETED</b></button>
+<button class="sourcecode" onclick="window.open('https://github.com/SridharChimalakonda/ID-Editor', '_blank');"><b>SOURCECODE</b></button><button class="button" onclick="window.open('http://rice.iiit.ac.in', '_blank');"><b>DEMO</b></button>
+<button class="thesis" onclick="window.open('https://web2py.iiit.ac.in/research_centres/publications/view_publication/phdthesis/74', '_blank');"><b>THESIS</b></button> <br>
+This thesis is driven by the idea of advancing computing to address critical challenges in the domain of education.  In particular, focuses on facilitating the design of educational technologies for scale and variety, where scale is the number of systems to be developed and variety stems from a diversified range of instructional designs consisting of varied goals,processes, content, teacher styles, learner styles and so on This approach consists of (i) modeling different aspects of instructional design like goals, process and content using patterns and mapping them to commonly accepted approaches like Bloom’s taxonomy and Merrill’s first principles of instruction (ii) representing these patterns using an ontology based framework that systematically captures different aspects of instructional design (iii) based on the modeling of domain through patterns and ontologies, this thesis presents a pattern oriented software product lines approach for modeling a family of instructional designs and for further semi-automatically generating eLearning Systems based on these instructional designs. The core concern of quality of instruction is mitigated by deriving patterns and ontologies from well-established and field tested methodologies and instructional material under the aegis of National Literacy Mission Authority of Government of India.
+</li>
+
+<br>
+<li>
+<b> A Fine Grained Approach to Develop Domain Specific Search Engine [Lalit Mohan S]</b><button class="button4"><b>COMPLETED</b></button>
+<button class="sourcecode" onclick="window.open('https://github.com/SIREN-DST/', '_blank');"><b>SOURCECODE</b></button><button class="button" onclick="window.open('https://serc.iiit.ac.in/Bhompoo/infosec.html', '_blank');"><b>DEMO</b></button>
+<button class="thesis" onclick="window.open('https://web2py.iiit.ac.in/research_centres/publications/view_publication/phdthesis/154', '_blank');"><b>THESIS</b></button> <br>
+ the work extends metaheuristics based Artificial Bee Colony (ABC) algorithm to extract sub-domains’ URLs. The extended ABC algorithm for crawling performed better than existing industry scale open source crawlers in terms of volume of extracted URLs and usage of compute resources. A metric SeedRel to measure precision of seed URLs based on child URLs presence and content relevance is proposed. The work measured sub-domains coverage with a baseline value of Shannon Diversity Index. The proposed fine grained ontology enrichment approach (OntoEnricher) exploits both syntactical sentence structures and distributional semantics to identify, extract concepts and instances in unstructured text leveraging Bidirectional LSTMs and pre-trained Universal Sentence Encoder transformer model. The ontology enrichment is experimented with 97,425 keyword phrases and 2.8 GB of Information Security corpus with an accuracy of 80%. The work also proposes a F ACT score to calculate credibility of web page. To demonstrate usefulness of knowledge base with sub-domain URL extraction, ontology enrichment and credibility assessment, an Information Security Search Engine (SIREN) is developed as a proof-ofconcept. The SIREN is deployed on Openstack distributed architecture for ease of maintenance and scalability.
 </li>
 </ul>
 </td>
