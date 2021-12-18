@@ -4,6 +4,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.js" type="text/javascript" charset="utf-8"></script>
+  <bibtex src="https://raw.githubusercontent.com/sai11101989/serc/main/test.bib"></bibtex>
+    <!--<bibtex src="C:\serc\test.bib"></bibtex> -->
 <style>
 body {font-family: Quicksand; font-size: 14px; color:#333}
         table
@@ -15,6 +18,8 @@ body {font-family: Quicksand; font-size: 14px; color:#333}
             border-spacing:10px
 			
         }
+		
+div {	font-family: Quicksand; font-size:12px; color:#333;}	
 		
 		a:link {
   color: black;
@@ -85,6 +90,12 @@ a:active {
 
 </style>
 
+    
+    <style>
+    bibtex { display: none; }
+    #bibtex_errors { margin-top:10px; color: red;}
+    </style>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
@@ -134,11 +145,50 @@ a:active {
 </tr>
 <tr>
 <td colspan="18">
-<h2 align="center"> Will be updated shortly! </h2>
+<hr>
+<div align="center">
+<br>
+<label for="fname"> <b>Search a Publication (by Author/Title/Year/Journal):</b> </label>
+<input type="text" class="bibtex_search" list="suggests" align="center">
+<button type="submit" class="bibtex_print">Search</button>
+</div>
+<datalist id="suggests">
+    <option value="@author=">
+    <option value="@title=">
+    <option value="@year=">
+    <option value="@journal=">
+</datalist>
+ <br> 
+<div id="bibtex_errors"></div>
+<div class="bibtex_topics"> </div>
+<div class="bibtex_structure">
+  <div class="group year" extra="DESC number">
+      <div class="templates"></div>
+  </div>
+</div>
+
+<div id="bibtex_display">
+   <div class="bibtex_template">
+    <ul> <li>
+      <span class="if title">
+        <a class="url">
+            <span class="title"></span>,
+        </a>
+      </span>
+      <div class="if author">
+        <span class="author"></span>
+      </div>
+	  <div>
+        <span class="if journal"><em><span class="journal"></span></em></span>
+        <span class="if month"><span class="month"></span>,</span> 
+        <span class="if year"><span class="year"></span>.</span>
+      </div>
+    </li></ul>
+  </div>
+ </div>
 </td>
 </tr>
 </table>
-
 </body>
 <table align="center">
 <tr>
