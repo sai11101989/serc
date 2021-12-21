@@ -1,3 +1,4 @@
+
 <html>
 
 <head><title>SERC @ IIITH</title>
@@ -87,6 +88,63 @@ a:active {
 
 </style>
 
+<style>
+.student {
+  background-color: #B30A89; 
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+   cursor: pointer;
+  border-radius: 8px;
+}
+
+.thesis {
+  background-color: #8200C1; 
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+   cursor: pointer;
+  border-radius: 8px;
+}
+
+.funded {
+  background-color: #105262; 
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+   cursor: pointer;
+  border-radius: 8px;
+}
+
+.paper {
+  background-color: #9C94A1 ; 
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+   cursor: pointer;
+  border-radius: 8px;
+}</style>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
@@ -112,7 +170,7 @@ a:active {
 <td align="center" colspan="8"> <img src="https://serc.iiit.ac.in/static/images/serc.png" width="350px"/>  </td>
 <td align="center" colspan="8" rowspan="2">
 <h3>We are looking for MS and PhD Students. <br>Write to raghu.reddy@iiit.ac.in </h3>
-<img src="https://serc.iiit.ac.in/static/images/apply.png" width="350px"/>
+<img src="https://serc.iiit.ac.in/test/static/images/apply.png" width="350px"/>
 </td>
 </tr>
 <tr>
@@ -147,7 +205,7 @@ Software Engineering Research Center (SERC) has a eminent faculty with vast teac
 </td>
 <td align="center" colspan="8">
 <h3>Following are the key research areas at SERC</h3>
-<img src="https://serc.iiit.ac.in/static/images/researchareas.png" width="400px" align="center" />
+<img src="https://serc.iiit.ac.in/test/static/images/researchareas.png" width="400px" align="center" />
 </td>
 </tr>
 <tr>
@@ -157,16 +215,17 @@ Software Engineering Research Center (SERC) has a eminent faculty with vast teac
 SERC offers following courses for students enrolled into B.Tech, M.Tech, M.S by Research and PhD Students at IIIT Hyderabad
 <br>
 <ul>
-<li> <b>Introduction to Software Systems</b> - Provides an introduction to software system development concepts and techniques to undergraduate students. [B.Tech]</li>
-<li> <b>Software System Development</b> - Provides an introduction to software system development concepts and techniques to graduate students. Enables the students to work in smaller teams and deliver software systems. [M.Tech, MS by Research] </li>
-<li> <b>Software Engineering</b> - To develop in-depth understanding of software engineering principles, practices and ability to apply them in developing large scale software systems. [B.Tech, M.Tech]</li>
-<li> <b>Topics in Software Engineering</b> - Provides conceptual understanding on various emerging areas for research in Software Engineering stream. Enables the students to identify research problems and review potential solutions. [M.Tech, MS by Research, PhD]</li>
-<li> <b>Software Quality Engineering</b> - Imparts quality analyses of software systems. Topics include verification, software quality assurance, standards, etc. Concepts and skills necessary to design and and validation, metrics and measurements are also part of the curriculum. [M.Tech, MS by Research, PhD]</li>
-<li> <b>Principles of Programming Languages</b> - This course is an introduction to the principles behind the design of programming languages, including object-oriented programming, and the use of formal methods in reasoning with programs. During the course, students build a series of interpreters, each a mini abstract or virtual machine for a specific language. [B.Tech, M.Tech, MS by Research, PhD] </li>
-<li> <b>Internals of Application Servers</b> - Understand essence of middleware and distributed object technology. J2EE Technology and Architecture overview. J2EE App Server architecture. Life cycle of a J2EE application-deployment through running and deployment. [M.Tech, MS by Research, PhD] </li>
-<li> <b>Software Foundations</b> - Provides mathematical foundations of programs and software systems so as to be able to prove properties about their behaviour. [B.Tech, M.Tech, MS by Research, PhD] </li>
-<li> <b>Usability Engineering</b> - To provide a foundations on usability aspects of Software Product Development. In collaboration with Cognitive Science Research Lab.[B.Tech, M.Tech, MS by Research, PhD] </li>
+<li> <b>Introduction to Software Systems</b> - Provides an introduction to software system development concepts and techniques to undergraduate students. <button class="student"><b>B.Tech</b></button></li>
+<li> <b>Software System Development</b> - Provides an introduction to software system development concepts and techniques to graduate students. Enables the students to work in smaller teams and deliver software systems.<button class="funded"><b>M.Tech</b></button><button class="thesis"><b>MS by Research</b></button></li>
+<li> <b>Software Engineering</b> - To develop in-depth understanding of software engineering principles, practices and ability to apply them in developing large scale software systems.<button class="student"><b>B.Tech</b></button><button class="funded"><b>M.Tech</b></button></li>
+<li> <b>Topics in Software Engineering</b> - Provides conceptual understanding on various emerging areas for research in Software Engineering stream. Enables the students to identify research problems and review potential solutions.<button class="funded"><b>M.Tech</b></button><button class="thesis"><b>MS by Research</b></button><button class="paper"><b>PhD</b></button></li>
+<li> <b>Software Quality Engineering</b> - Imparts quality analyses of software systems. Topics include verification, software quality assurance, standards, etc. Concepts and skills necessary to design and and validation, metrics and measurements are also part of the curriculum.<button class="funded"><b>M.Tech</b></button><button class="thesis"><b>MS by Research</b></button><button class="paper"><b>PhD</b></button></li>
+<li> <b>Principles of Programming Languages</b> - This course is an introduction to the principles behind the design of programming languages, including object-oriented programming, and the use of formal methods in reasoning with programs. During the course, students build a series of interpreters, each a mini abstract or virtual machine for a specific language.<button class="student"><b>B.Tech</b></button><button class="funded"><b>M.Tech</b></button><button class="thesis"><b>MS by Research</b></button><button class="paper"><b>PhD</b></button></li>
+<li> <b>Internals of Application Servers</b> - Understand essence of middleware and distributed object technology. J2EE Technology and Architecture overview. J2EE App Server architecture. Life cycle of a J2EE application-deployment through running and deployment.<button class="funded"><b>M.Tech</b></button><button class="thesis"><b>MS by Research</b></button><button class="paper"><b>PhD</b></button></li>
+<li> <b>Software Foundations</b> - Provides mathematical foundations of programs and software systems so as to be able to prove properties about their behaviour.<button class="student"><b>B.Tech</b></button><button class="funded"><b>M.Tech</b></button><button class="thesis"><b>MS by Research</b></button><button class="paper"><b>PhD</b></button></li>
+<li> <b>Usability Engineering</b> - To provide a foundations on usability aspects of Software Product Development. In collaboration with Cognitive Science Research Lab.<button class="student"><b>B.Tech</b></button><button class="funded"><b>M.Tech</b></button><button class="thesis"><b>MS by Research</b></button><button class="paper"><b>PhD</b></button></li>
 </ul>
+<hr>
 </td>
 </tr>
 </table>
@@ -174,7 +233,7 @@ SERC offers following courses for students enrolled into B.Tech, M.Tech, M.S by 
 <table align="center">
 <tr>
 <td align="center">
-<hr>
+
 <img src="https://www.iiit.ac.in/img/iiit-new.png" width="150px" align="center" />
 <br>
 </td>
