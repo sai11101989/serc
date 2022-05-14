@@ -61,3 +61,24 @@ year = {2015},
 url = {https://doi.org/10.1109/CSEET.2015.8},
 journal = {Proceedings of the 2015 IEEE 28th Conference on Software Engineering Education and Training (CSEET '15), pp:3–6, IEEE Computer Society Publication, ISBN: 9781467367011},
 }
+
+# Accessing the Server
+
+## For Windows:
+Software Required :
+	1. Putty
+	2. OpenVPN - with IIIT-H VPN configuration.
+## Steps for accessing the SERC server:
+- Connect to the OpenVPN using your institutional credentials.
+- Once connected to the VPN, open putty on your windows machine.
+- Use the host name as per the credentials and click on open.
+- This would connect you to the SERC server, use the server credentials to login to the server.
+
+## For Linux:
+Software Required :
+	1. OpenVPN - with IIIT-H VPN configuration.
+## Steps for accessing the SERC server:
+- Connect to the OpenVPN using your institutional credentials.
+- Once connected to the VPN, connect to the server using ssh command.
+- Use the host name as per the credentials and click on open.
+- This would connect you to the SERC server, use the server credentials to login to the server.
