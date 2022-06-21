@@ -1,0 +1,532 @@
+<html>
+
+<head><title>DIC @ SERC</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" /> 
+<meta http-equiv="cache-control" content="no-cache" /> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+$("#work").hide();
+$("#res").hide();
+$("#stud").hide();
+$("#fund").show();
+$("#pub").hide();
+
+
+
+$("#afund").click(function(){
+$("#fund").show();
+$("#res").hide();
+$("#stud").hide();
+$("#work").hide();
+$("#pub").hide();
+	      });
+		  
+		  
+$("#ares").click(function(){
+$("#res").show();
+$("#fund").hide();
+$("#stud").hide();
+$("#work").hide();
+$("#pub").hide();
+	      });
+		  
+$("#astud").click(function(){
+$("#stud").show();
+$("#fund").hide();
+$("#res").hide();
+$("#work").hide();
+$("#pub").hide();
+	      });	
+
+$("#awork").click(function(){
+$("#stud").hide();
+$("#fund").hide();
+$("#res").hide();
+$("#work").show();
+$("#pub").hide();
+	      });
+
+$("#apub").click(function(){
+$("#stud").hide();
+$("#fund").hide();
+$("#res").hide();
+$("#work").hide();
+$("#pub").show();
+	      });		  
+		  
+		  
+});
+</script>
+
+<style>
+body {font-family: Quicksand; font-size: 14px; color:#333}
+        table
+        {
+            font-family: Quicksand; font-size:14px; color:#333;
+            border-collapse:collapse;
+            width:600px;
+            padding:10px;
+            border-spacing:10px
+			
+        }
+		
+		a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: black;
+}
+a:active {
+  color: black;
+}
+
+#anchorunderline {
+            text-decoration: none;
+        }
+
+</style>
+<style>
+.fa {
+  padding: 5px;
+  font-size: 25px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+	color: white;
+}
+
+.fa:link {
+  color: white;
+}
+
+.fa:visited {
+  color: white;
+}
+
+.fa:active {
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: #FF0000;
+  color: white;
+}
+
+.button {
+  background-color: #FF0000; 
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.sourcecode {
+  background-color: #BBBA00; 
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.button3 {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  border-radius: 8px;
+}
+
+.button4 {
+  background-color: #007bb5; /* Green */
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  border-radius: 8px;
+}
+
+.button5 {
+  background-color: #F7A817; /* Green */
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  border-radius: 8px;
+}
+
+
+
+.student {
+  background-color: #B30A89; 
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+   cursor: pointer;
+  border-radius: 8px;
+}
+
+.workshop {
+  background-color: #eba834; 
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+   cursor: pointer;
+  border-radius: 8px;
+}
+
+.publication {
+  background-color: #e04176; 
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+   cursor: pointer;
+  border-radius: 8px;
+}
+
+.thesis {
+  background-color: #8200C1; 
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+   cursor: pointer;
+  border-radius: 8px;
+}
+
+.funded {
+  background-color: #105262; 
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+   cursor: pointer;
+  border-radius: 8px;
+}
+
+.paper {
+  background-color: #9C94A1 ; 
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+   cursor: pointer;
+  border-radius: 8px;
+}
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<table align="center" width="100%" border="0" >
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="center" colspan="4"> <img src="https://serc.iiit.ac.in/static/images/serc.png" width="150px"/>  </td>
+<td align="center" colspan="8" rowspan="2">
+<h1>Design Innovation Center <br> IIIT Hyderabad</h1> </td>
+<td align="center"  colspan="4">
+<img src="https://serc.iiit.ac.in/static/images/dic.png" width="150px"/>
+</td>
+<tr>
+<td colspan="16"><hr></td>
+</tr>
+<tr>
+<!--
+<tr>
+<td align="center" colspan="3" style="vertical-align:center"> <h2> <a id="anchorunderline" href="https://serc.iiit.ac.in/index.html">ABOUT</a> </h2></td>
+<td align="center" colspan="3" style="vertical-align:center"> <h2> <a id="anchorunderline" href="https://serc.iiit.ac.in/people.html">PEOPLE</a></h2> </td>
+<td align="center" colspan="3" style="vertical-align:center"> <h2> <a id="anchorunderline" href="https://serc.iiit.ac.in/publication.html">PUBLICATION</a> </h2> </td>
+<td align="center" colspan="3" style="vertical-align:center"> <h2> <a id="anchorunderline" href="https://serc.iiit.ac.in/projects.html">PROJECTS</a> </h2> </td>
+<td align="center" colspan="3" style="vertical-align:center"> <h2> <a id="anchorunderline" href="https://serc.iiit.ac.in/contact.html">CONTACT</a> </h2> </td>
+</tr>-->
+<tr>
+<td colspan="16" align="center">
+<button class="funded" id="afund"><b> ABOUT </b></button> 
+&nbsp;&nbsp;<button class="student" id="astud"><b> CURRENT PROJECTS </b></button> &nbsp;&nbsp; <button class="thesis" id="ares"><b> COMPLETED PROJECTS </b></button> &nbsp;&nbsp; <button class="workshop" id="awork"><b> WORKSHOPS </b></button> &nbsp;&nbsp; <button class="publication" id="apub"><b> PUBLICATIONS </b></button>
+</td>
+</tr>
+<tr>
+<td colspan="16">
+<hr>
+<ul id="fund">
+<a href="https://dic.iiit.ac.in">Design Innovation Center</a> was set up at IIT Hyderabad, which is one of the 20 nodal institutes for this initiative and IIIT Hyderabad is collaborating as a spoke institute along with IIIT Sri City, IIITDM Kancheepuram with aim to use design to the fullest to simplify the human lifestyle and to engage creative minds in innovating and experimenting with the design process and to understand its vast possibilities. 
+<br>
+<br>
+At Software Engineering Research Center, IIIT Hyderabad, we are focused on social software design and development problems. Our research domain includes FinTech with an emphasis on software design and usability for all age groups and HealthCare with an emphasis on eye care and mental health problems. A Course on Usability and a Lab was setup as part of this initiative at IIIT Hyderabad.
+<br>
+<br>
+<b>Usability Engineering Course</b> was designed to provide an understanding of Usability and its impacts on product design. To provide knowledge of various usability evaluation methods, design thinking approaches, and various other real-time use cases. This course is offered to PG students (MTech, MS by Research, PhD) since Spring 2016. 
+<br>
+<br>
+<b>Virtual Human Interaction Lab</b> was started in August 2019, located on the premises of the Software Engineering Research Center, IIIT Hyderabad, for conducting systematic Usability Studies. This lab supports usability evaluation for mobile apps, websites, and virtual/augmented reality applications. VR Lab includes a Participant Room with PCs and Mobile Phones for Participant Studies, Observer Room for observing user tasks, and actions. Other sub-research groups -Perception and Cognition, VR Quality, VR Usability, VR Requirement Engineering use this lab for various usability studies. The participant room supports 10+ participants for a pluralistic walk-through. The observation Room contains additional PCs to track and review user interactions from the participant room.
+<br>
+<br>
+<img src="https://serc.iiit.ac.in/static/images/vhil.png" width="650px" />
+</ul>
+<!---CURRENT Projects-->
+<ul id="stud">
+<li>
+<b>VelGmat: Low Cost Gait Mat for Stance Phase
+Calculation - [Mohammad Waqas Wani]</b><button class="button3"><b>ONGOING</b></button> <button class="button" onclick="window.open('https://youtube.com/shorts/B1z2VFsAtpo?feature=share', '_blank');"><b>DEMO</b></button><br>
+Material science enables us to develop a wide array of materials capable enough to address worldly problems. Velostat is a carbon-impregnated polythene material used to address many problems including gait-related problems. We developed a novel approach to analyze a gait-cycle parameter called Stance-phase. We ideated, designed, and implemented a low-cost customizable Velostat sensing mat to calculate the stance phase. We validated our customized mat using sensor density, sensitivity, process time, and hardware performance metrics. Our validation results helped us improve the effectiveness of gait analysis. We conducted a comparative study between our low-cost customized mat and commercially available mat to understand the contrast in stance phase values. We observed 95% accuracy in stance phase values compared with commercially available mat. Considering these findings, our low-cost mat can be further customized for various applications in healthcare, gaming, and entertainment.
+</li>
+<br>
+<li>
+<b> CHORD Customizable Head Mount Device for Human Eye Disorder Detection using Virtual Reality - [Pawan Kumar Y] </b><button class="button3"><b>ONGOING</b></button> <button class="button" onclick="window.open('https://youtu.be/DvhQ_zAYENU ', '_blank');"><b>DEMO</b></button><br>
+ Eye disorders like Myopia, Hypermetropia, and Color blindness affect millions of people around the world. Early detection can help the affected persons take preventive measures against further degradation. However, early detection requires regular testing and visits to trained healthcare professionals to judge the level of disorder. Customizing the test requirements for various disorders can simplify the diagnosis. As part of this paper, we present an approach towards developing a Virtual Reality (VR) based low-cost head-mounted device (HMD). The HMD can detect human eye disorders and other eye issues through VR applications, limiting healthcare professionals’ involvement. We created VR based scenes to examine Visual acuity test, Astigmatism, Color vision deficiency (CVD) and Age-related macular degeneration (AMD). We conducted a user study for visual acuity(myopia), CVD, astigmatism and AMD using CHORD, and the results were promising. We further discuss our plans to deploy such devices to detect eye disorders in economically vulnerable communities with limited access to healthcare professionals. 
+</li>
+<br>
+<li>
+<b>Designing Limitless Paths in Virtual Reality Environments - [Raghav Mittal] </b> <button class="button3"><b>ONGOING</b></button> <button class="button" onclick="window.open('https://www.youtube.com/watch?v=tmBYfRN74mk ', '_blank');"><b>DEMO</b></button>
+<br>Walking in a Virtual Environment is a bounded task. It is challenging for a subject to navigate a large virtual environment designed in a limited physical space. External hardware support may be required to achieve such an act in a concise physical area without compromising navigation and virtual scene rendering quality. This paper proposes an algorithmic approach to let a subject navigate a limitless virtual environment within a limited physical space with no additional external hardware support apart from the the regular Head-Mounted-Device (HMD) itself. As part of our work, we developed a Virtual Art Gallery as a use-case to validate our algorithm. We conducted a simple user-study to gather feedback from the participants to evaluate the ease of locomotion of the application. The results showed that our algorithm could generate limitless paths of our use-case under predefined conditions and can be extended to other use-cases. 
+
+
+
+
+<br>
+</ul>
+<!---Research Projects-->
+<ul id="res">
+<li> <b>Visual acuity testing using VR - [Shivang Shekhar & Sai Anirudh Karre]</b> <button class="button4"><b>COMPLETED</b></button> <button class="button" onclick="window.open('https://www.youtube.com/watch?v=NlqTsSvGoLY', '_blank');"><b>DEMO</b></button><button class="paper" onclick="window.open('https://link.springer.com/chapter/10.1007/978-3-030-49698-2_28', '_blank');"><b>PAPER</b></button> <br> The VREYE project aims to widen the scope of VR software systems in the medical domain and loops in various benefits of the technology in order to solve the problems that persist in the scope of testing and detection. VR is used for Visual acuity testing of myopia and astigmatic eyes and can be used in providing a piece of tentative information about the refractive errors in the human eye using HMD devices. 
+<br>
+This project was partially funded by Google (GCP credits). The goals of the project is to provide a visual acuity testing solution:
+<ol>
+<li>To the underprivileged and post covid-19 pandemic to serve as a remote, user-friendly, safe testing kit for personal usage where the patients are not required to flock hospitals for minor testing and diagnosis purposes for refractive errors in eye.</li>
+<li>Also, this project may be expanded in future in areas like color-blindness and other eye-related ailments.</li>
+<li>This project has been developed specifically using Unity in order to make it compatible with various VR specific platforms.</li>
+ <li>In this project we aimed to digitize and automate the various eye-testing methods like Snellen Test (for myopia detection), Fan Test (for astigmatism detection) and with sufficient user data predict to the closest value possible what could be the refractive indexes of patients using the system.</li> 
+</ol>
+</li>
+<br>
+<li>
+<b>Analysis of FinTech Mobile App Usability for Geriatric Users in India - [Sai Anirudh Karre]</b><button class="button4"><b>COMPLETED</b></button> <button class="paper" onclick="window.open('https://dl.acm.org/doi/10.1145/3205946.3205947', '_blank');"><b>PAPER</b></button> <br>  The usability of these FinTech applications across different age groups is still unclear. As part of the research, we explore the usability of FinTech mobile apps across different age groups through a quantitative survey and a more focused study on factors impacting the geriatric population on adopting FinTech mobile apps in India. The authors have interviewed geriatric users to identify their FinTech mobile usage. Based on the interviews, we built a heuristic usability experiment to capture real-time hurdles while participating in a real financial transaction. This study led us to build a model FinTech mobile app by incorporating derived usability guidelines. We evaluated the model app using an automated usability framework called UMETRIX. 
+</li>
+<br>
+<li>
+<b>UMETRIX - Usability Evaluation for Mobile Apps - [Neeraj Mathur] </b>  <button class="button4"><b>COMPLETED</b></button> <button class="button" onclick="window.open('https://www.youtube.com/watch?v=eeo0e1ajNnM', '_blank');"><b>DEMO</b></button><button class="button3" onclick="window.open('https://serc.iiit.ac.in/umetrix', '_blank');"><b>TOOL</b></button><button class="sourcecode" onclick="window.open('https://github.com/neerajmathur/UMETRIX', '_blank');"><b>SOURCECODE</b></button> <button class="thesis" onclick="window.open('https://web2py.iiit.ac.in/research_centres/publications/view_publication/mastersthesis/688', '_blank');"><b>THESIS</b></button> <br> UMETRIX to identify functional usability issues specific to mobile applications. This framework uses usability guidelines associated with usability code patterns in mobile applications to improve usability. As proof of concept, we have built an end-to-end system using the framework to validate and verify usability issues in Android mobile applications and generate recommendations to enhance functional aspects of Usability. 
+</li>
+<br>
+<li>
+<b>Gamily - Gamification Platform For All - [Shivam Khandelwal & Sai Krishna Sripada]</b>  <button class="button4"><b>COMPLETED</b></button> <button class="sourcecode" onclick="window.open('https://github.com/anhsirksai/GamifiedSD', '_blank');"><b>SOURCECODE</b></button>
+<button class="thesis" onclick="window.open('https://web2py.iiit.ac.in/research_centres/publications/view_publication/mastersthesis/449', '_blank');"><b>THESIS</b></button> <br> Software engineering activities like code reviews, change management, knowledge management, issue tracking, etc. tend to be heavily process oriented. Gamification of such activities by composing the core activities
+with game design elements like badges and points can increase developers' interest in performing such activities. While there are various frameworks/applications that assist in gamification, extending the frameworks to add any/all desired game de sign elements have not been adequately addressed. As part of our research, we designed and developed an extensible architectural framework for gamification of software engineering activities where in the game design elements are modeled as services. We create an example instance of our framework by building a prototype for code review activity and note the challenges of
+designing such an extensible architectural framework. The example instance uses python's Flask micro framework and has five game design elements implemented as services, and exposed using restful APIs.
+</li>
+<br>
+
+</ul>
+<ul id="work">
+<li> <b>UnReal VR Workshop</b> - One-day Virtual Reality development workshop was conducted in collaboration with Imaginate Inc. (Startup in VR Domain) to provide a Hands-On Introductory session for VR enthusiasts on Unity (Software for VR Development). Participants from Academia, Industry, VR Enthusiasts from Arts, Media, etc., are invited to be part of the workshop. 
+<br>
+</li>
+<br>
+<li>
+<b>Design Thinking Workshop</b> - One day Design Thinking workshop session was conducted by Prof. Wyndham from Stanford University. Participants from various spectrums like Arts, Product Design, Development, Research are involved. The motive of this workshop is to provide an hands-on experience on Design Thinking based product development approaches for building real-time solutions for real-time problems.  
+<br>
+Photos: https://alumni.iiit.ac.in/albums/photos/25232.dz 
+</li>
+<br>
+<li>
+<b>Short Term Industry UX/UI Training</b> - Refresher Course for on UI/UX with Broadrige Inc. IIIT Hyderabad. Conducted by Dr. Raghu Reddy and Ripul Kumar (Consulting Director of User Research, MakeMyTrip) 
+</li>
+<br>
+<li>
+<b>User Interface Design Seminar</b> - Conducted a two-day workshop of introduction to design at IIIT SriCity. 
+</li>
+<br>
+<li>
+<b>Guest Seminar</b> - Seminar on the paradigm shift in user interfaces at IIIIT Hyderabad. Conducted by Karthi Subbaram, Chief design officer, OGHMA Design.  
+</li>
+<br>
+<li>
+<b>Collaborated with VAMRR & UniteIndia Unity Conference (Industry Ecosystem)</b> - A year-long empirical study was conducted by collaborating with Industry Virtual Reality communities for understanding current practices of Industrial practitioners while building their Virtual Reality Products. 
+</li>
+
+</ul>
+
+<ul id="pub">
+<b>Patents</b>
+<br>
+<ul>
+<li>
+<b>System and method for evaluating and facilitating customized guidelines using usability code pattern analysis</b>, United States Patent: 11144430 (GRANTED), Assigned: IIIT Hyderabad, India, Granted Date: 2021/10/12, Expiry Date: 2040/03/11, https://patents.google.com/patent/US11144430B2/en 
+</li>
+<li>
+<b>SYSTEM AND METHOD FOR GENERATING A LIMITLESS PATH IN VIRTUAL REALITY ENVIRONMENT FOR CONTINUOUS LOCOMOTION</b>, US PATENT [Applied], Applied by: IIIT Hyderabad, India June 2022
+</li>
+</ul>
+<br>
+<br>
+<b>Conference Publications</b>
+<ul>
+<li>
+Y Pawankumar Gururaj, Sai Anirudh Karre, Raghav Mittal, Y. Raghu Reddy, Syed Azeemuddin, <b>Customizable Head-mounted Device for Detection of Eye Disorders using Virtual Reality</b>, In proceedings of 35th International Conference on VLSI Design and 19th International Conference on Embedded Systems, VLSID 2022, Virtual, 20th - 24th Feb, 2022. IEEE 2022. 
+</li>
+<li>
+Raghav Mittal, Sai Anirudh Karre, Y Pawankumar Gururaj, Y. Raghu Reddy, <b>Enhancing Configurable Limitless Paths in Virtual Reality Environments</b>, In proceedings of the 15th Innovations in Software Engineering Conference 2022, Gandhinagar, India, February 2022. 
+</li>
+<li>
+Raghav Mittal, Sai Anirudh Karre, Y. Raghu Reddy, <b>Designing Limitless Path in Virtual Reality Environment</b>, In proceedings of Virtual, Augmented and Mixed Reality - 13th International Conference, VAMR 2021, Held as Part of the 23rd HCI International Conference, HCII 2021, Virtual Event, July 24-29, 2021, Proceedings. Lecture Notes in Computer Science 12770, Springer 2021, pp: 80-95, ISBN 978-3-030-77598-8 
+</li>
+<li>
+Mohit Kuri, Sai Anirudh Karre, Y. Raghu Reddy, <b>Understanding Software Quality Metrics for Virtual Reality Products - A Mapping Study</b>, In proceedings of the 14th Innovations in Software Engineering Conference 2021, Bhubaneswar, India, February 2021 
+</li>
+<li>
+Shivang Shekar, Rajat Gupta, Sai Anirudh Karre, Y. Raghu Reddy <b>Detecting Astigmatism Condition in Human Eye using VR</b>, EuroVR 2020 Application, Exhibition & Demo Track: Proceedings of the Virtual EuroVR Conference. VTT Technology, Volume-381, Virtual Conference, November 2020 
+</li>
+<li>
+Shivang Shekar, Pranav Reddy Pesaladinne, Sai Anirudh Karre, Y. Raghu Reddy <b>VREye: Exploring Human Visual Acuity Test Using Virtual Reality</b>, Virtual, Augmented and Mixed Reality. Industrial and Everyday Life Applications. HCII 2020. Lecture Notes in Computer Science, vol 12191. Springer, Cham, July 2020 pp: 415-429 
+</li>
+<li>
+Sai Anirudh Karre, Neeraj Mathur, Y. Raghu Reddy <b>Understanding usability evaluation setup for VR products in industry: a review study</b>, ACM SIGAPP Applied Computing Review 19(4), January 2020 pp: 17-27 
+</li>
+<li>
+Sai Anirudh Karre, Neeraj Mathur, Y. Raghu Reddy <b>Usability Evaluation of VR products in Industry - A Systematic Literature Review</b>, In proceedings of the 34th ACM/SIGAPP Symposium On Applied Computing (SAC), April 2019, Limassol, Cyprus, pp: 1-11 
+</li>
+<li>
+Sai Anirudh Karre, Neeraj Mathur, Y. Raghu Reddy: <b>Is Virtual Reality Product Development different?: An Empirical Study on VR Product Development Practices</b>, In proceedings of the 12th Innovations in Software Engineering Conference (ISEC), Feburary 2019, Pune, India, pp:3.1-3.11 
+</li>
+<li>
+Neeraj Mathur, Sai Anirudh Karre, Y. Raghu Reddy: <b>Usability Evaluation Framework for Mobile Apps using Code Analysis</b>, In proceedings of the Evaluation and Assessment in Software Engineering (EASE), June 2018, Christchurch, New Zealand, pp:187-192 
+</li>
+<li>
+Neeraj Mathur, Sai Anirudh Karre, Lalit Mohan S, Y. Raghu Reddy: <b>Analysis of FinTech Mobile App Usability for Geriatric Users in India</b>, In proceedings of the 4th International ACM In-Cooperation HCI and UX Conference (CHIuXiD), March 2018, Yogyakarta, Indonesia, pp: 1-11 
+</li>
+<li>
+Shivam Khandelwal, Saikrishna Sripada, Y. Raghu Reddy: <b>Impact of Gamification on Code review process: An Experimental Study.</b> Proceedings of the 10th Innovations in Software Engineering Conference, ISEC 2017, Jaipur, India, February 5-7, 2017. ACM 2017, ISBN 978-1-4503-4856-0, pp: 122-126  
+</li>
+<li>
+Saikrishna Sripada, Y. Raghu Reddy, Shivam Khandelwal: <b>Architecting an extensible framework for Gamifying Software Engineering concepts.</b> Proceedings of the 9th India Software Engineering Conference, Goa, India, February 18-20, 2016. ACM 2016, ISBN 978-1-4503-4018-2, pp: 119-130 
+</ul>
+<br>
+<br>
+<b>Posters</b>
+<ul>
+<li>
+Y Pawankumar Gururaj, Raghav Mittal, Sai Anirudh Karre, Y. Raghu Reddy, Syed Azeemuddin, <b>Towards Conducting Effective Locomotion Through Hardware Transformation in Head-Mounted-Device - A Review Study [POSTER] </b>, In proceedings of IEEE Virtual Reality Conference (IEEEVR 2022), 12-16 March 2022, Virtual
+</li>
+</ul>
+<br>
+<br>
+</td>
+</tr>
+</table>
+</body>
+<table align="center">
+<tr>
+<td align="center">
+<hr>
+<img src="https://www.iiit.ac.in/img/iiit-new.png" width="150px" align="center" />
+<br>
+</td>
+</tr>
+<tr>
+<td align="center">
+	<p align="center">
+	<font face="Quicksand" size="2">Software Engineering Research Center (SERC) @ IIIT Hyderabad - 
+	<script>var today = new Date(); var year = today.getFullYear(); document.writeln(year);</script><br> 5th Floor, T-HUB Building, IIIT Hyderabad Campus, Gachibowli, Hyderabad - 500032</font>
+	</p>
+	</td>
+	</tr>
+	</table>
+</html>
